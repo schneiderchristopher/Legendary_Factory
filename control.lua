@@ -1,3 +1,7 @@
+require("lib")
+
+player_list = {}
+
 script.on_init(function()
   local technologies_to_research = {
     'epic-quality',
@@ -12,7 +16,52 @@ script.on_init(function()
     end
   end
 end)
+script.on_event({defines.events.on_cutscene_cancelled, defines.events.on_cutscene_finished}, function(event)
+  setup_player_initial_items(event)
+end)
 
+script.on_event({defines.events.on_player_created, defines.events.on_player_joined_game}, function(event)
+  setup_player_initial_items(event)
+end)
+
+function setup_player_initial_items(event)
+  local player = game.get_player(event.player_index)
+  
+  if (player) then
+  if Contains(player_list,player) then return end
+  if (player.controller_type ~= defines.controllers.character) then return end
+  local player_inventory = player.character.get_inventory(defines.inventory.character_main)
+
+  if player_inventory then
+    player_inventory.clear()
+
+    local difficulty = settings.startup["difficulty"].value
+    if difficulty == "Default" then
+      player_inventory.insert({ name="stone-furnace", quality="legendary", count=2})
+      player_inventory.insert({ name="burner-mining-drill", quality="legendary", count=4})
+      player_inventory.insert({ name="burner-recycler", quality="legendary", count=1})
+      player_inventory.insert({ name="wooden-chest", quality="legendary", count=1})
+    end
+    if difficulty == "Hard" then
+      player_inventory.insert({ name="stone-furnace", quality="legendary", count=2})
+      player_inventory.insert({ name="burner-mining-drill", quality="legendary", count=2})
+      player_inventory.insert({ name="burner-recycler", quality="legendary", count=1})
+      player_inventory.insert({ name="wooden-chest", quality="legendary", count=1})
+    end
+    if difficulty == "Very Hard" then
+      player_inventory.insert({ name="stone-furnace", quality="legendary", count=1})
+      player_inventory.insert({ name="burner-mining-drill", quality="legendary", count=1})
+      player_inventory.insert({ name="burner-recycler", quality="legendary", count=1})
+      player_inventory.insert({ name="wooden-chest", quality="legendary", count=1})
+    end
+    if difficulty == "Masochist" then
+      player_inventory.insert({ name="stone-furnace", quality="legendary", count=1})
+      player_inventory.insert({ name="burner-mining-drill", quality="legendary", count=1})
+    end
+  end
+  
+  end
+end
 local ignore_group = {
   'logistics'
 }
