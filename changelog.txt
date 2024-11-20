@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2024-11-20
+  Features:
+    - Only allow legendary entities to be placed.
+    - Allow only redudant legendary entities(belts, rails, etc...)
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2024-11-20
   Features:
