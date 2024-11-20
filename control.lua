@@ -94,7 +94,6 @@ script.on_event(defines.events.on_built_entity,
               end
             end
           end
-          return
         end
         if (contains(ignore_group, event.entity.prototype.group.name)) then
           if (contains(sub_groups_to_forbid, event.entity.prototype.subgroup.name)) then
