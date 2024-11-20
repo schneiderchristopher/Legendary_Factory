@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2024-11-20
+  Features:
+    - Adds difficulty configuration in startup settings.
+  Bugfixes:
+    - Fixes logic when handling legendary placement of entity/ghosts.
+---------------------------------------------------------------------------------------------------
 Version: 0.4.0
 Date: 2024-11-20
   Features:
