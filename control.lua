@@ -70,12 +70,13 @@ local sub_groups_to_check = {
   'transport',
   'train-transport',
   'energy-pipe-distribution',
+  'storage',
+  'container'
 }
 
 local sub_groups_to_forbid = {
-  'container',
   'logistic-network',
-  'inserter'
+  'inserter',
 }
 
 local names_to_check = {
@@ -89,7 +90,10 @@ local names_to_check = {
   'medium-electric-pole',
   'big-electric-pole',
   'substation',
-  'pump'
+  'pump',
+  'wooden-chest',
+  'iron-chest',
+  'steel-chest'
 }
 
 local function contains(array, target)
@@ -142,9 +146,9 @@ script.on_event(defines.events.on_built_entity,
                 return
               end
             end
+            return
           end
-        end
-        if (contains(ignore_group, event.entity.prototype.group.name)) then
+        elseif (contains(ignore_group, event.entity.prototype.group.name)) then
           if (contains(sub_groups_to_forbid, event.entity.prototype.subgroup.name)) then
             destroy_not_legendary(player, event.entity, game, item)
             return
@@ -160,6 +164,7 @@ script.on_event(defines.events.on_built_entity,
           destroy_not_legendary(player, event.entity, game, item)
           return
         end
+        destroy_not_legendary(player, event.entity, game, item)
       end
     end
   end
