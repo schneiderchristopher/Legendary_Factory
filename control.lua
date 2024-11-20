@@ -1,7 +1,6 @@
 script.on_init(function()
   local technologies_to_research = {
-	'quality-module',
-    'epic-quality',
+  'epic-quality',
 	'legendary-quality'
   }
 

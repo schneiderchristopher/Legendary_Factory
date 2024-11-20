@@ -1,0 +1,6 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2024-11-20
+  Features:
+    - Adds Crude Module(Tier 0 quality module).
+    - Unlocks Epic and Legendary from start.
