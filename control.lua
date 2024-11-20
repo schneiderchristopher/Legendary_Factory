@@ -40,23 +40,27 @@ function setup_player_initial_items(event)
       player_inventory.insert({ name="stone-furnace", quality="legendary", count=2})
       player_inventory.insert({ name="burner-mining-drill", quality="legendary", count=4})
       player_inventory.insert({ name="burner-recycler", quality="legendary", count=1})
+      player_inventory.insert({ name="burner-assembling-machine", quality="legendary", count=1})
       player_inventory.insert({ name="wooden-chest", quality="legendary", count=1})
     end
     if difficulty == "Hard" then
       player_inventory.insert({ name="stone-furnace", quality="legendary", count=2})
       player_inventory.insert({ name="burner-mining-drill", quality="legendary", count=2})
       player_inventory.insert({ name="burner-recycler", quality="legendary", count=1})
+      player_inventory.insert({ name="burner-assembling-machine", quality="legendary", count=1})
       player_inventory.insert({ name="wooden-chest", quality="legendary", count=1})
     end
     if difficulty == "Very Hard" then
       player_inventory.insert({ name="stone-furnace", quality="legendary", count=1})
       player_inventory.insert({ name="burner-mining-drill", quality="legendary", count=1})
       player_inventory.insert({ name="burner-recycler", quality="legendary", count=1})
+      player_inventory.insert({ name="burner-assembling-machine", quality="legendary", count=1})
       player_inventory.insert({ name="wooden-chest", quality="legendary", count=1})
     end
     if difficulty == "Masochist" then
       player_inventory.insert({ name="stone-furnace", quality="legendary", count=1})
       player_inventory.insert({ name="burner-mining-drill", quality="legendary", count=1})
+      player_inventory.insert({ name="burner-assembling-machine", quality="legendary", count=1})
     end
   end
   

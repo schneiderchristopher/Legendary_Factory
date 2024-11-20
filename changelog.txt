@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 2024-11-20
+  Features:
+    - Adds a burner assembling machine.
+    - Updates dificculty with burner assembling machine.
+    - Adds quality module slots for assembling machine 1.
+    - Adds quality module slots for stone furnace.
+    - Adds quality module slots for steel furnace.
+    - Adds quality module slots for burner mining drill.
+---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 2024-11-20
   Features:
