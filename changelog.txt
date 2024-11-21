@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.0
+Date: 2024-11-21
+  Features:
+    - Adds a greyscale graphics to the burner assembling machine.
+    - Adds thumbnail
+    - Adds legendary inserter to some difficulties.
+  Changes:
+    - Improve the code that was checking placement(same thing, but more readable).
+    - Burner mining drill now can be placed in any quality, since upgrading it's reduntant.
+    - Dificculties now start with one default quality burner mining drill.
+    - Increase the number of burner assembler, burner recylers and wooden chest in some difficulties.
+  Bugfixes:
+    - Fix quality was not working.
+---------------------------------------------------------------------------------------------------
 Version: 0.6.0
 Date: 2024-11-20
   Features:
