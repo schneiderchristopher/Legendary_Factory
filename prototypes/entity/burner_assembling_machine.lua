@@ -1,6 +1,6 @@
 local container = {}
 
-local entity = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-1"])
+local entity = table.deepcopy(data.raw["assembling-machine"]["assembling-machine-2"])
 
 entity.name = "burner-assembling-machine"
 entity.order = "a-[burner-assembling-machine]c-[assembling-machine-1]"

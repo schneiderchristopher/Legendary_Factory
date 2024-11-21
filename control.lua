@@ -4,6 +4,7 @@ player_list = {}
 
 script.on_init(function()
   local technologies_to_research = {
+    'quality-module',
     'epic-quality',
     'legendary-quality'
   }
