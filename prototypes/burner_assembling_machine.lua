@@ -5,6 +5,7 @@ local item = table.deepcopy(data.raw["item"]["assembling-machine-1"])
 item.name = "burner-assembling-machine"
 item.order = "a-[burner-assembling-machine]c-[assembling-machine-1]"
 item.place_result = "burner-assembling-machine"
+item.icon = "__Legendary_Factory__/graphics/icons/burner-assembling-machine.png"
 table.insert(container, item)
 data:extend(container)
 
