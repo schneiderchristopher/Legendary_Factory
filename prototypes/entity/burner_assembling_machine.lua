@@ -10,6 +10,7 @@ entity.minable = { mining_time = 0.2, result = "burner-assembling-machine" }
 entity.module_slots = 3
 entity.icon = "__Legendary_Factory__/graphics/icons/burner-assembling-machine.png"
 entity.corpse = "burner-assembling-machine-remnants"
+entity.crafting_categories = {"crafting", "basic-crafting", "advanced-crafting", "electronics", "pressing"}
 entity.energy_source =
 {
   type = "burner",
