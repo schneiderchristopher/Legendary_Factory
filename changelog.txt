@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.2
+Date: 2024-12-21
+  Bugfixes:
+    - Fixes Stone and Steel Furnaces to actually use quality when processing items - Thanks FearThePenguin!
+    - Fix Burner Assembling machine not able to craft tier 1 Assembling Machine recipes.
+---------------------------------------------------------------------------------------------------
 Version: 0.7.1
 Date: 2024-11-21
   Changes:
