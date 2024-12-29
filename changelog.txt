@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.7.3
+Date: 2024-12-29
+  Bugfixes:
+    - Fixes an issue where the Space Platform Foundation couldn't be placed unless it was legendary.
+---------------------------------------------------------------------------------------------------
 Version: 0.7.2
 Date: 2024-12-21
   Bugfixes:
