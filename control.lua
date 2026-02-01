@@ -174,9 +174,6 @@ script.on_event(defines.events.on_built_entity,
         local group_name = getGroupName(event.entity, "group")
         local subgroup_name = getGroupName(event.entity, "subgroup")
 
-        game.print(entity_name)
-        game.print(group_name)
-        game.print(subgroup_name)
         if (entity_name == 'burner-mining-drill') then
           return
         end
