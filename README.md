@@ -1,22 +1,22 @@
 # Legendary Factory
 ## The ultimate Factorio Challenge
 
-From the beginning, we built our factory to be Legendary. But what if, from the start, we were Legendary?
+From the beginning, our goal is to build a factory to be Legendary. But what if, from the start, we were Legendary?
 That’s exactly what **Legendary Factory** brings to the table—the ultimate challenge!
 
 Features:
-- Can't place non-legendary entities(expect belts, burner mining drills, and other stuff that quality doesn't make sense)
+- You are only allowed to place **Legendary Entities**. (Except Belts, Burner Mining Drills, and other entities where quality doesn't make a difference.)
 - A new **Quality Module**, to start your legendary adventure!
-- **New machine**s: Burner Assembler Machine and Burner Recycler.
+- **New machines**: Burner Assembler Machine and Burner Recycler.
 - **Difficulties**: Choose your fate when starting your legendary factory!
 
 
 ⚠️  **This mod is intended to be played on a fresh save**
-This mod it's in early stages, so feedback is welcome.
+This mod is in early stages, so feedback is always welcome.
 
 ---
 
-Liked the mod? Support me on Ko-fi:  
+Liked the mod? You can buy me a coffee :)
 https://ko-fi.com/skallet
 
 ---
